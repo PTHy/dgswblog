@@ -39,6 +39,8 @@ public class PostServiceImpl
         return this.postRepository.save(p);
     }
 
+
+
     @Override
     public Post view(Long id) {
         return this.postRepository.findById(id)
@@ -56,12 +58,15 @@ public class PostServiceImpl
                         fp.setUserId(p.getUserId());
                     if (p.getContent() != null)
                         fp.setContent(p.getContent());
-                    if(p.getStoredPath() != null)
-                        fp.setStoredPath(p.getStoredPath());
-                    if(p.getOriginName() != null)
-                        fp.setOriginName(p.getOriginName());
                     return this.postRepository.save(fp);
                 })
+                .orElse(null);
+    }
+
+    @Override
+    public Post getByUserId(Long userId) {
+        return this.postRepository
+                .findTopByUserIdOrderByIdDesc(userId)
                 .orElse(null);
     }
 
@@ -79,11 +84,11 @@ public class PostServiceImpl
         }
     }
 
-    @Override
-    public AttachmentProtocol getPostImage(Long id) {
-        Optional<Post> found = this.postRepository.findById(id);
-        if(!found.isPresent())
-            return null;
-        return new AttachmentProtocol(found.get().getStoredPath(), found.get().getOriginName());
-    }
+//    @Override
+//    public AttachmentProtocol getPostImage(Long id) {
+//        Optional<Post> found = this.postRepository.findById(id);
+//        if(!found.isPresent())
+//            return null;
+//        return new AttachmentProtocol(found.get().getStoredPath(), found.get().getOriginName());
+//    }
 }

@@ -8,22 +8,23 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Data
 @NoArgsConstructor
 public class Post {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
     private Long userId;
-    @Column(nullable = false)
+    @Column(nullable = false, columnDefinition = "TEXT")
     private String content;
 
-    private String storedPath;
-    private String originName;
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
+    private List<Attachment> picture;
 
     @CreationTimestamp
     @Column(updatable = false, nullable = false)
@@ -41,8 +42,6 @@ public class Post {
         this.content = c.getContent();
         this.created = c.getCreated();
         this.modified = c.getModified();
-        this.storedPath = c.getStoredPath();
-        this.originName = c.getOriginName();
     }
 
     public Post(Long userId, String content) {

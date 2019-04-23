@@ -10,7 +10,7 @@ public interface PostService {
     Post add(Post c);
     Post view(Long id);
     Post update(Post p, Long id);
+    Post getByUserId(Long userId);
 
     boolean delete(Long id);
-    AttachmentProtocol getPostImage(Long id);
 }

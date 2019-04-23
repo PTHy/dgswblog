@@ -47,42 +47,42 @@ public class AttachmentController {
         }
     }
 
-    @GetMapping("/attachment/{type}/{id}")
-    public void download(@PathVariable String type, @PathVariable Long id, HttpServletRequest req, HttpServletResponse res)
-    {
-        try {
-            AttachmentProtocol ap = null;
-            String filePath, fileName;
-            if (type.equals("user")) {
-                ap = userService.getProfileImage(id);
-            }
-            else if (type.equals("post")) {
-                ap = postService.getPostImage(id);
-            }
-
-            if (ap == null) {
-                System.out.println("File Not Found");
-                return;
-            }
-
-            filePath = ap.getStoredPath();
-            fileName = ap.getOriginName();
-
-            File file = new File(filePath);
-
-            if (!file.exists()) return;
-
-            String mimeType = URLConnection.guessContentTypeFromName(file.getName());
-            if (mimeType == null) mimeType = "application/octet-stream";
-
-            res.setContentType(mimeType);
-            res.setHeader("Content-Disposition", "inline; filename=\"" + fileName + "\"");
-            res.setContentLength((int) file.length());
-
-            InputStream is = new BufferedInputStream(new FileInputStream(file));
-            FileCopyUtils.copy(is, res.getOutputStream());
-        } catch (Exception ex) {
-            System.out.println(ex);
-        }
-    }
+//    @GetMapping("/attachment/{type}/{id}")
+//    public void download(@PathVariable String type, @PathVariable Long id, HttpServletRequest req, HttpServletResponse res)
+//    {
+//        try {
+//            AttachmentProtocol ap = null;
+//            String filePath, fileName;
+//            if (type.equals("user")) {
+//                ap = userService.getProfileImage(id);
+//            }
+//            else if (type.equals("post")) {
+//                ap = postService.getPostImage(id);
+//            }
+//
+//            if (ap == null) {
+//                System.out.println("File Not Found");
+//                return;
+//            }
+//
+//            filePath = ap.getStoredPath();
+//            fileName = ap.getOriginName();
+//
+//            File file = new File(filePath);
+//
+//            if (!file.exists()) return;
+//
+//            String mimeType = URLConnection.guessContentTypeFromName(file.getName());
+//            if (mimeType == null) mimeType = "application/octet-stream";
+//
+//            res.setContentType(mimeType);
+//            res.setHeader("Content-Disposition", "inline; filename=\"" + fileName + "\"");
+//            res.setContentLength((int) file.length());
+//
+//            InputStream is = new BufferedInputStream(new FileInputStream(file));
+//            FileCopyUtils.copy(is, res.getOutputStream());
+//        } catch (Exception ex) {
+//            System.out.println(ex);
+//        }
+//    }
 }
