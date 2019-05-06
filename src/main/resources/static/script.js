@@ -20,7 +20,11 @@ async function getPosts() {
             throw error;
 
         posts = response.data;
+
+        $('#user-posts').text(posts.length);
+
         selectPost(posts[0].id);
+
         drawPostsList(posts);
     } catch (error) {
         console.log(`ERROR : ${error.message}`);
@@ -197,7 +201,20 @@ async function deletePost(id) {
     }
 }
 
+function chkInput() {
+    if (!($('#new-post-title').val() && $('#new-post-content').val())) {
+        alert("모든 빈칸을 채워주세요");
+        return false;
+    }
+
+    return true;
+}
+
 async function addPost() {
+
+    if (!chkInput())
+        return;
+
     const newPost = {
         userId: currentUser,
         title: $('#new-post-title').val(),
@@ -213,7 +230,7 @@ async function addPost() {
             data: JSON.stringify(newPost),
             success: (result) => {
                 alert("글 작성에 성공하였습니다");
-                drawPostList(result.data);
+                getPosts();
             }
         });
     } catch (error) {
@@ -225,6 +242,10 @@ async function addPost() {
 }
 
 async function modifyPost(id) {
+
+    if (!chkInput())
+        return;
+
     const newPost = {
         userId: currentUser,
         title: $('#new-post-title').val(),

@@ -28,7 +28,7 @@ public class PostServiceImpl
 
     @Override
     public List<Post> listAllContents() {
-        return this.postRepository.findAll();
+        return this.postRepository.findAllByOrderByCreatedDesc();
     }
 
     @Override
