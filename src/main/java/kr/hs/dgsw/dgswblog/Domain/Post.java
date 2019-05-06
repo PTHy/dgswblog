@@ -20,6 +20,9 @@ public class Post {
 
     @Column(nullable = false)
     private Long userId;
+
+    @Column(nullable = false)
+    private String title;
     @Column(nullable = false, columnDefinition = "TEXT")
     private String content;
 
@@ -39,6 +42,7 @@ public class Post {
     public Post(Post c) {
         this.id = c.getId();
         this.userId = c.getUserId();
+        this.title = c.getTitle();
         this.content = c.getContent();
         this.created = c.getCreated();
         this.modified = c.getModified();

@@ -5,9 +5,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="script.js"></script>
     <title>DGSW Blog</title>
 </head>
@@ -17,25 +17,66 @@
         <div id="title">DGSW 블로그</div>
     </header>
     <aside class="left-container container">
-        <div id="new-post-button">새 글 쓰기</div>
+        <div id="new-post-button" class="button" onclick="openPostDialog(ADD_POST)">새 글 쓰기</div>
         <div id="post-container">
             <div id="new-post-text">최근 글</div>
-            <ul id="post-list">
-                <li><i class="fas fa-angle-right"></i> ㅁㄴㅇㄹㄴㅇㅀ</li>
-                <li><i class="fas fa-angle-right"></i> asdfqwer</li>
-            </ul>
+            <ul id="post-list"></ul>
         </div>
     </aside>
     <aside class="right-container container">
-        <div>
-            <img src="./public/default.jpg" alt="">
-            <div></div>
+        <div id="login-button" class="button" onclick="openLoginDialog()">
+            로그인
+        </div>
+        <div id="user-info" style="display: none;">
+            <img id="profile-image" src="./public/default.jpg" alt="프로필이미지">
+            <div id="user-account"></div>
+            <div id="user-name"></div>
+            <br>
+            <div id="user-joined"></div>
+            <div id="user-posts">0</div>
         </div>
     </aside>
     <section id="main-container" class="container">
-        <div class="content"></div>
-        <div></div>
+        <div id="post-title">제목</div>
+        <div id="post-button">
+            <div class="button">수정</div>
+            <div class="button">삭제</div>
+        </div>
+        <hr>
+        <div id="post-content">내용</div>
+        <div id="post-created-date">0000-00-00 00:00:00</div>
     </section>
-    <footer class="container"></footer>
+    <footer class="container">
+        Powered by Park TaeHyeong
+    </footer>
+    <div id="login-popup" style="position: fixed; display: none;">
+        <div class="popup-container">
+            <div>
+                <div style="margin: 30px 0 30px 0;">로그인</div>
+                <div><input type="text" id="input-user-id" placeholder="사용자 아이디"></div>
+                <div><input type="password" id="input-user-password" placeholder="패스워드" type="password"></div>
+                <div>
+                    <button onclick="login()">확인</button>
+                    <button onclick="closeLoginDialog()">취소</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="post-popup" style="position: fixed; display: none">
+        <div class="popup-container">
+            <div>
+                <div><input type="text" id="new-post-title" placeholder="글 제목"></div>
+                <textarea id="new-post-content" cols="40" rows="5" placeholder="글 내용"></textarea>
+                <div id="add-button" style="display: none;">
+                    <button onclick="addPost()">확인</button>
+                    <button onclick="closePostDialog()">취소</button>
+                </div>
+                <div id="modify-button" style="display: none;">
+                    <button>수정</button>
+                    <button onclick="closePostDialog()">취소</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

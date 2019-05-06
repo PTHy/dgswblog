@@ -2,35 +2,12 @@ POST http://localhost:8080/post
 Content-Type: application/json
 
 {
-   "userId": 1,
-   "content": "안녕하이세요"
+  "userId": 1,
+  "title": "학교가기싫어",
+  "content": "학교가기 넘무싫어요"
 }
 
-<> 2019-04-29T032838.200.json
-
-###
-
-POST http://localhost:8080/post
-Content-Type: application/json
-
-{
-   "userId": 1,
-   "content": "안녕하d세요"
-}
-
-<> 2019-04-29T032833.200.json
-
-###
-
-POST http://localhost:8080/post
-Content-Type: application/json
-
-{
-   "userId": 1,
-   "content": "안녕하세요"
-}
-
-<> 2019-04-29T032820.200.json
+<> 2019-05-07T032851.200.json
 
 ###
 
@@ -38,63 +15,13 @@ POST http://localhost:8080/user
 Content-Type: application/json
 
 {
-   "account": "tae020117",
-   "password": "test",
-   "username": "박태형",
-   "email": "tae020117@gmail.com"
-}
-
-<> 2019-04-29T032812.200.json
-
-###
-
-POST http://localhost:8080/post
-Content-Type: application/json
-
-{
-   "userId": 1,
-   "content": "안녕하세요"
-}
-
-<> 2019-04-29T030811.200.json
-
-###
-
-POST http://localhost:8080/user/login
-Content-Type: application/json
-
-{
   "account": "tae020117",
+  "email": "tae020117@gmail.com",
+  "username": "박태형",
   "password": "test"
 }
 
-<> 2019-04-29T030808.200.json
-
-###
-
-POST http://localhost:8080/user/login
-Content-Type: application/json
-
-{
-  "account": "tae020117",
-  "password": "1234"
-}
-
-<> 2019-04-29T030759.200.json
-
-###
-
-POST http://localhost:8080/user
-Content-Type: application/json
-
-{
-   "account": "tae020117",
-   "password": "test",
-   "username": "박태형",
-   "email": "tae020117@gmail.com"
-}
-
-<> 2019-04-29T030755.200.json
+<> 2019-05-07T032850.200.json
 
 ###
 
@@ -102,101 +29,12 @@ POST http://localhost:8080/post
 Content-Type: application/json
 
 {
-   "userId": 1,
-   "content": "안녕하세요"
+  "userId": 1,
+  "title": "학교가기싫어",
+  "content": "학교가기 넘무싫어요"
 }
 
-<> 2019-04-29T030750.200.json
-
-###
-
-POST http://localhost:8080/user/login
-Content-Type: application/json
-
-{
-  "account": "tae020117",
-  "password": "1234"
-}
-
-<> 2019-04-29T030743.200.json
-
-###
-
-PUT http://localhost:8080/post/117
-Content-Type: application/json
-
-{
-   "content": "안녕히가세요"
-}
-
-<> 2019-04-23T035232.200.json
-
-###
-
-PUT http://localhost:8080/post/117
-Content-Type: application/json
-
-{
-   "content": "안녕히가세요"
-}
-
-<> 2019-04-23T035110.200.json
-
-###
-
-PUT http://localhost:8080/post/117
-Content-Type: application/json
-
-{
-   "content": "안녕히가세요"
-}
-
-<> 2019-04-23T035029.200.json
-
-###
-
-PUT http://localhost:8080/post/117
-Content-Type: application/json
-
-{
-   "content": "안녕히가세요"
-}
-
-<> 2019-04-23T034950.200.json
-
-###
-
-PUT http://localhost:8080/post/2
-Content-Type: application/json
-
-{
-   "content": "안녕히가세요"
-}
-
-<> 2019-04-23T034935.200.json
-
-###
-
-PUT http://localhost:8080/post/1
-Content-Type: application/json
-
-{
-   "content": "안녕히가세요"
-}
-
-<> 2019-04-23T034924.200.json
-
-###
-
-POST http://localhost:8080/post
-Content-Type: application/json
-
-{
-   "userId": 1,
-   "content": "안녕하세요"
-}
-
-<> 2019-04-23T034921.200.json
+<> 2019-05-07T032753.200.json
 
 ###
 
@@ -204,176 +42,13 @@ POST http://localhost:8080/user
 Content-Type: application/json
 
 {
-   "account": "tae020117",
-   "password": "test",
-   "username": "박태형",
-   "email": "tae020117@gmail.com"
-}
-
-<> 2019-04-23T034916.200.json
-
-###
-
-POST http://localhost:8080/user/login
-Content-Type: application/json
-
-{
   "account": "tae020117",
-  "password": "1234"
+  "email": "tae020117@gmail.com",
+  "username": "박태형",
+  "password": "test"
 }
 
-<> 2019-04-22T031618.200.json
-
-###
-
-PUT http://localhost:8080/user/1
-Content-Type: application/json
-
-{
-  "account": "tae020117",
-  "password": "1234",
-  "username": "박태힝",
-  "email": "tae020117@gmail.com"
-}
-
-<> 2019-04-22T031616.200.json
-
-###
-
-POST http://localhost:8080/user/login
-Content-Type: application/json
-
-{
-  "account": "tae020117",
-  "password": "1234"
-}
-
-###
-
-POST http://localhost:8080/user
-Content-Type: application/json
-
-{
-   "account": "tae020117",
-   "password": "test",
-   "username": "박태형",
-   "email": "tae020117@gmail.com"
-}
-
-<> 2019-04-22T031609.200.json
-
-###
-
-POST http://localhost:8080/user/login
-Content-Type: application/json
-
-{
-  "account": "tae020117",
-  "password": "1234"
-}
-
-<> 2019-04-22T031430.500.html
-
-###
-
-PUT http://localhost:8080/user/1
-Content-Type: application/json
-
-{
-  "account": "tae020117",
-  "password": "1234",
-  "username": "박태힝",
-  "email": "tae020117@gmail.com"
-}
-
-<> 2019-04-22T031429.200.json
-
-###
-
-PUT http://localhost:8080/user/1
-Content-Type: application/json
-
-{
-  "account": "tae020117",
-  "password": "asdafsadf",
-  "username": "박태힝",
-  "email": "tae020117@gmail.com"
-}
-
-<> 2019-04-22T031345.200.json
-
-###
-
-PUT http://localhost:8080/user/1
-Content-Type: application/json
-
-{
-  "account": "tae020117",
-  "password": "1234",
-  "username": "박태힝",
-  "email": "tae020117@gmail.com"
-}
-
-<> 2019-04-22T031338.200.json
-
-###
-
-PUT http://localhost:8080/user/2
-Content-Type: application/json
-
-{
-  "account": "tae020117",
-  "password": "1234",
-  "username": "박태힝",
-  "email": "tae020117@gmail.com"
-}
-
-###
-
-POST http://localhost:8080/user
-Content-Type: application/json
-
-{
-   "account": "tae020117",
-   "password": "test",
-   "username": "박태형",
-   "email": "tae020117@gmail.com"
-}
-
-<> 2019-04-22T031309.200.json
-
-###
-
-GET http://localhost:8080/user/1
-Accept: application/json
-
-###
-
-GET http://localhost:8080/user/1
-Accept: application/json
-
-<> 2019-04-22T030956.200.json
-
-###
-
-GET http://localhost:8080/user
-Accept: application/json
-
-<> 2019-04-22T030949.200.json
-
-###
-
-POST http://localhost:8080/user
-Content-Type: application/json
-
-{
-   "account": "tae020117",
-   "password": "test",
-   "username": "박태형",
-   "email": "tae020117@gmail.com"
-}
-
-<> 2019-04-22T030943.200.json
+<> 2019-05-07T032752.200.json
 
 ###
 
@@ -381,47 +56,12 @@ POST http://localhost:8080/post
 Content-Type: application/json
 
 {
-   "userId": 1,
-   "content": "안녕하세요"
+  "userId": 1,
+  "title": "학교가기싫어",
+  "content": "학교가기 넘무싫어요"
 }
 
-###
-
-GET http://localhost:8080/post
-Accept: application/json
-
-<> 2019-04-22T025427.200.json
-
-###
-
-DELETE http://localhost:8080/post/1
-
-<> 2019-04-22T025424.200.json
-
-###
-
-GET http://localhost:8080/post/1
-Accept: application/json
-
-<> 2019-04-22T025422.200.json
-
-###
-
-GET http://localhost:8080/post
-Accept: application/json
-
-<> 2019-04-22T025420.200.json
-
-###
-
-PUT http://localhost:8080/post/1
-Content-Type: application/json
-
-{
-   "content": "안녕히가세요"
-}
-
-<> 2019-04-22T025417.200.json
+<> 2019-05-07T032012.200.json
 
 ###
 
@@ -429,11 +69,12 @@ POST http://localhost:8080/post
 Content-Type: application/json
 
 {
-   "userId": 1,
-   "content": "안녕하세요"
+  "userId": 1,
+  "title": "학교가기싫어",
+  "content": "학교가기 넘무싫어요"
 }
 
-<> 2019-04-22T025415.200.json
+<> 2019-05-07T032011.200.json
 
 ###
 
@@ -441,25 +82,13 @@ POST http://localhost:8080/user
 Content-Type: application/json
 
 {
-   "account": "tae020117",
-   "password": "test",
-   "username": "박태형",
-   "email": "tae020117@gmail.com"
-}
-
-<> 2019-04-22T025412.200.json
-
-###
-
-PUT http://localhost:8080/user/2
-Content-Type: application/json
-
-{
   "account": "tae020117",
-  "password": "test",
-  "username": "박태힝",
-  "email": "tae020117@gmail.com"
+  "email": "tae020117@gmail.com",
+  "username": "박태형",
+  "password": "test"
 }
+
+<> 2019-05-07T032010.200.json
 
 ###
 
@@ -467,77 +96,12 @@ POST http://localhost:8080/post
 Content-Type: application/json
 
 {
-   "userId": 1,
-   "content": "안녕하세요"
+  "userId": 1,
+  "title": "학교가기싫어",
+  "content": "학교가기 넘무싫어요"
 }
 
-###
-
-PUT http://localhost:8080/post/1
-Content-Type: application/json
-
-{
-   "content": "안녕히가세요"
-}
-
-###
-
-POST http://localhost:8080/post
-Content-Type: application/json
-
-{
-   "userId": 1,
-   "content": "안녕하세요"
-}
-
-###
-
-PUT http://localhost:8080/user/2
-Content-Type: application/json
-
-{
-  "account": "tae020117",
-  "password": "test",
-  "username": "박태힝",
-  "email": "tae020117@gmail.com"
-}
-
-###
-
-PUT http://localhost:8080/post/1
-Content-Type: application/json
-
-{
-   "content": "안녕히가세요"
-}
-
-<> 2019-04-22T025149.500.html
-
-###
-
-GET http://localhost:8080/post
-Accept: application/json
-
-<> 2019-04-22T025147.200.json
-
-###
-
-GET http://localhost:8080/post/1
-Accept: application/json
-
-<> 2019-04-22T025145.200.json
-
-###
-
-POST http://localhost:8080/post
-Content-Type: application/json
-
-{
-   "userId": 1,
-   "content": "안녕하세요"
-}
-
-<> 2019-04-22T025144.200.json
+<> 2019-05-07T031921.200.json
 
 ###
 
@@ -545,13 +109,566 @@ POST http://localhost:8080/user
 Content-Type: application/json
 
 {
-   "account": "tae020117",
-   "password": "test",
-   "username": "박태형",
-   "email": "tae020117@gmail.com"
+  "account": "tae020117",
+  "email": "tae020117@gmail.com",
+  "username": "박태형",
+  "password": "test"
 }
 
-<> 2019-04-22T025141.200.json
+<> 2019-05-07T031920.200.json
+
+###
+
+POST http://localhost:8080/post
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "학교가기싫어",
+  "content": "학교가기 넘무싫어요"
+}
+
+<> 2019-05-07T031811-1.200.json
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "account": "tae020117",
+  "email": "tae020117@gmail.com",
+  "username": "박태형",
+  "password": "test"
+}
+
+<> 2019-05-07T031811.200.json
+
+###
+
+POST http://localhost:8080/post
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "학교가기싫어",
+  "content": "학교가기 넘무싫어요"
+}
+
+<> 2019-05-07T031653-1.200.json
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "account": "tae020117",
+  "email": "tae020117@gmail.com",
+  "username": "박태형",
+  "password": "test"
+}
+
+<> 2019-05-07T031653.200.json
+
+###
+
+POST http://localhost:8080/post
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "학교가기싫어",
+  "content": "학교가기 넘무싫어요"
+}
+
+<> 2019-05-07T031414-1.200.json
+
+###
+
+POST http://localhost:8080/post
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "학교가기싫어",
+  "content": "학교가기 넘무싫어요"
+}
+
+<> 2019-05-07T031414.200.json
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "account": "tae020117",
+  "email": "tae020117@gmail.com",
+  "username": "박태형",
+  "password": "test"
+}
+
+<> 2019-05-07T031412.200.json
+
+###
+
+POST http://localhost:8080/post
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "학교가기싫어",
+  "content": "학교가기 넘무싫어요"
+}
+
+<> 2019-05-07T031411.200.json
+
+###
+
+POST http://localhost:8080/post
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "학교가기싫어",
+  "content": "학교가기 넘무싫어요"
+}
+
+<> 2019-05-07T031118.200.json
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "account": "tae020117",
+  "email": "tae020117@gmail.com",
+  "username": "박태형",
+  "password": "test"
+}
+
+<> 2019-05-07T031117.200.json
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "account": "tae020117",
+  "email": "tae020117@gmail.com",
+  "username": "박태형",
+  "password": "test"
+}
+
+<> 2019-05-07T030008.200.json
+
+###
+
+POST http://localhost:8080/post
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "학교가기싫어",
+  "content": "학교가기 넘무싫어요"
+}
+
+<> 2019-05-07T023416.200.json
+
+###
+
+POST http://localhost:8080/post
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "학교가기싫어",
+  "content": "학교가기 넘무싫어요"
+}
+
+<> 2019-05-07T023415.200.json
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "account": "tae020117",
+  "email": "tae020117@gmail.com",
+  "username": "박태형",
+  "password": "test"
+}
+
+<> 2019-05-07T023414.200.json
+
+###
+
+POST http://localhost:8080/post
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "학교가기싫어",
+  "content": "학교가기 넘무싫어요"
+}
+
+<> 2019-05-07T014928.200.json
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "account": "tae020117",
+  "email": "tae020117@gmail.com",
+  "username": "박태형",
+  "password": "test"
+}
+
+<> 2019-05-07T014926.200.json
+
+###
+
+POST http://localhost:8080/post
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "학교가기싫어",
+  "content": "학교가기 넘무싫어요"
+}
+
+<> 2019-05-07T014751.200.json
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "account": "tae020117",
+  "email": "tae020117@gmail.com",
+  "username": "박태형",
+  "password": "test"
+}
+
+<> 2019-05-07T014750.200.json
+
+###
+
+POST http://localhost:8080/post
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "학교가기싫어",
+  "content": "학교가기 넘무싫어요"
+}
+
+<> 2019-05-07T014657.200.json
+
+###
+
+POST http://localhost:8080/post
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "학교가기싫어",
+  "content": "학교가기 넘무싫어요"
+}
+
+<> 2019-05-07T014656.200.json
+
+###
+
+POST http://localhost:8080/post
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "학교가기싫어",
+  "content": "학교가기 넘무싫어요"
+}
+
+<> 2019-05-07T014649.200.json
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "account": "tae020117",
+  "email": "tae020117@gmail.com",
+  "username": "박태형",
+  "password": "test"
+}
+
+<> 2019-05-07T014648.200.json
+
+###
+
+POST http://localhost:8080/post
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "학교가기싫어",
+  "content": "학교가기 넘무싫어요"
+}
+
+<> 2019-05-07T014153.200.json
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "account": "tae020117",
+  "email": "tae020117@gmail.com",
+  "username": "박태형",
+  "password": "test"
+}
+
+<> 2019-05-07T014152.200.json
+
+###
+
+POST http://localhost:8080/post
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "학교가기싫어",
+  "content": "학교가기 넘무싫어요"
+}
+
+<> 2019-05-07T014056.200.json
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "account": "tae020117",
+  "email": "tae020117@gmail.com",
+  "username": "박태형",
+  "password": "test"
+}
+
+<> 2019-05-07T014055.200.json
+
+###
+
+POST http://localhost:8080/post
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "학교가기싫어",
+  "content": "학교가기 넘무싫어요"
+}
+
+<> 2019-05-07T013949.200.json
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "account": "tae020117",
+  "email": "tae020117@gmail.com",
+  "username": "박태형",
+  "password": "test"
+}
+
+<> 2019-05-07T013947.200.json
+
+###
+
+POST http://localhost:8080/post
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "학교가기싫어",
+  "content": "학교가기 넘무싫어요"
+}
+
+<> 2019-05-07T012703.200.json
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "account": "tae020117",
+  "email": "tae020117@gmail.com",
+  "username": "박태형",
+  "password": "test"
+}
+
+<> 2019-05-07T012702.200.json
+
+###
+
+POST http://localhost:8080/post
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "학교가기싫어",
+  "content": "학교가기 넘무싫어요"
+}
+
+<> 2019-05-07T012602.200.json
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "account": "tae020117",
+  "email": "tae020117@gmail.com",
+  "username": "박태형",
+  "password": "test"
+}
+
+<> 2019-05-07T012601.200.json
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "account": "tae020117",
+  "email": "tae020117@gmail.com",
+  "username": "박태형",
+  "password": "test"
+}
+
+<> 2019-05-07T011953.200.json
+
+###
+
+POST http://localhost:8080/post
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "학교가기싫어",
+  "content": "학교가기 넘무싫어요"
+}
+
+<> 2019-05-07T011801.200.json
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "account": "tae020117",
+  "email": "tae020117@gmail.com",
+  "username": "박태형",
+  "password": "test"
+}
+
+<> 2019-05-07T011755.200.json
+
+###
+
+POST http://localhost:8080/post
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "학교가기싫어",
+  "content": "학교가기 넘무싫어요"
+}
+
+<> 2019-05-07T121511.200.json
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "account": "tae020117",
+  "email": "tae020117@gmail.com",
+  "username": "박태형",
+  "password": "test"
+}
+
+<> 2019-05-07T121439.200.json
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "account": "tae020117",
+  "email": "tae020117@gmail.com",
+  "username": "박태형",
+  "password": "test"
+}
+
+<> 2019-05-07T121356.200.json
+
+###
+
+POST http://localhost:8080/post
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "학교가기싫어",
+  "content": "학교가기 넘무싫어요"
+}
+
+<> 2019-05-07T121213.200.json
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "account": "tae020117",
+  "email": "tae020117@gmail.com",
+  "username": "박태형",
+  "password": "test"
+}
+
+<> 2019-05-07T121201.200.json
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "account": "tae020117",
+  "email": "tae020117@gmail.com",
+  "username": "박태형",
+  "password": "test"
+}
+
+<> 2019-05-07T120917.200.json
 
 ###
 

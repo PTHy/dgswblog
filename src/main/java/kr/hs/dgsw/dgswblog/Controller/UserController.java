@@ -33,11 +33,15 @@ public class UserController {
 
     @PostMapping("/user")
     public ResponseFormat add(@RequestBody User u) {
-        User user = this.userService.add(u);
+        try {
+            User user = this.userService.add(u);
 
-        if (user == null)
+            if (user == null)
+                return new ResponseFormat(ResponseType.FAIL, null);
+            return new ResponseFormat(ResponseType.USER_ADD, user);
+        } catch (Exception ex) {
             return new ResponseFormat(ResponseType.FAIL, null);
-        return new ResponseFormat(ResponseType.USER_ADD, user);
+        }
     }
 
     @PostMapping("/user/login")

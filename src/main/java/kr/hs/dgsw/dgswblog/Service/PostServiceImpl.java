@@ -56,6 +56,8 @@ public class PostServiceImpl
                 .map(fp -> {
                     if (p.getUserId() != null)
                         fp.setUserId(p.getUserId());
+                    if (p.getTitle() != null)
+                        fp.setTitle(p.getTitle());
                     if (p.getContent() != null)
                         fp.setContent(p.getContent());
                     return this.postRepository.save(fp);
